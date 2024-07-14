@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СеансыИнформационнойБазы" id="1">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>СеансыИнформационнойБазы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СеансыИнформационнойБазыКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СеансыИнформационнойБазыКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СеансыИнформационнойБазыРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СеансыИнформационнойБазыСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СеансыИнформационнойБазы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СеансыИнформационнойБазыСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СеансыИнформационнойБазыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СеансыИнформационнойБазыСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СеансыИнформационнойБазы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СеансыИнформационнойБазыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СеансыИнформационнойБазыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СеансыИнформационнойБазыУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СеансыИнформационнойБазы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СеансыИнформационнойБазыУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СеансыИнформационнойБазыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СеансыИнформационнойБазыIPАдресКлиента" id="14">
+					<DataPath>СеансыИнформационнойБазы.IPАдресКлиента</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыIPАдресКлиентаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыIPАдресКлиентаРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыИмяКомпьютера" id="17">
+					<DataPath>СеансыИнформационнойБазы.ИмяКомпьютера</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыИмяКомпьютераКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыИмяКомпьютераРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыИмяПриложения" id="20">
+					<DataPath>СеансыИнформационнойБазы.ИмяПриложения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыИмяПриложенияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыИмяПриложенияРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыНачалоСеанса" id="23">
+					<DataPath>СеансыИнформационнойБазы.НачалоСеанса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыНачалоСеансаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыНачалоСеансаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыНомерСеанса" id="26">
+					<DataPath>СеансыИнформационнойБазы.НомерСеанса</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыНомерСеансаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыНомерСеансаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыНомерСоединения" id="29">
+					<DataPath>СеансыИнформационнойБазы.НомерСоединения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыНомерСоединенияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыНомерСоединенияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыПолноеИмяПользователя" id="32">
+					<DataPath>СеансыИнформационнойБазы.ПолноеИмяПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыПолноеИмяПользователяКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыПолноеИмяПользователяРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыEmailПользователя" id="35">
+					<DataPath>СеансыИнформационнойБазы.EmailПользователя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыEmailПользователяКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыEmailПользователяРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="СеансыИнформационнойБазыПользовательРежимЗапуска" id="38">
+					<DataPath>СеансыИнформационнойБазы.ПользовательРежимЗапуска</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СеансыИнформационнойБазыПользовательРежимЗапускаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СеансыИнформационнойБазыПользовательРежимЗапускаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаКомандыАдминистратора" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды администратора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды администратора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандыАдминистратораРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<Button name="ОбновитьНумерациюОбъектов" id="41">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьНумерациюОбъектов</CommandName>
+					<ExtendedTooltip name="ОбновитьНумерациюОбъектовРасширеннаяПодсказка" id="42"/>
+				</Button>
+				<Button name="ВыполнитьОбновлениеПовторноИспользуемыхЗначений" id="43">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыполнитьОбновлениеПовторноИспользуемыхЗначений</CommandName>
+					<ExtendedTooltip name="ВыполнитьОбновлениеПовторноИспользуемыхЗначенийРасширеннаяПодсказка" id="44"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ИструментыАдминистратора</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СеансыИнформационнойБазы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сеансы информационной базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="IPАдресКлиента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>IPАдрес клиента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяКомпьютера" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя компьютера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПриложения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя приложения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НачалоСеанса" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало сеанса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСеанса" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сеанса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСоединения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер соединения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмяПользователя" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="EmailПользователя" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Email пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПользовательРежимЗапуска" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь режим запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьНумерациюОбъектов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить нумерацию объектов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить нумерацию объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьНумерациюОбъектов</Action>
+		</Command>
+		<Command name="ВыполнитьОбновлениеПовторноИспользуемыхЗначений" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить повторно используемые значения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обновление повторно используемых значений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОбновлениеПовторноИспользуемыхЗначений</Action>
+		</Command>
+	</Commands>
+</Form>
